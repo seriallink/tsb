@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/seriallink/timescale/cmd"
+	"github.com/seriallink/tsb/cmd"
 	"log"
 )
 
