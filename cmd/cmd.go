@@ -4,7 +4,7 @@ import (
 	"errors"
 	"os"
 
-	"github.com/seriallink/timescale/src"
+	"github.com/seriallink/tsb/src"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )
