@@ -1,4 +1,4 @@
-module github.com/seriallink/timescale
+module github.com/seriallink/tsb
 
 go 1.20
 
