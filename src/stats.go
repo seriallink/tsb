@@ -45,11 +45,11 @@ func calculateMedian(durations []time.Duration) time.Duration {
 
 }
 
-func generateStats(results *sync.Map) (stats SummaryStats) {
+func generateStats(data *sync.Map) (stats SummaryStats) {
 
 	durations := make([]time.Duration, 0, 0)
 
-	results.Range(func(key, value interface{}) bool {
+	data.Range(func(key, value interface{}) bool {
 		stats.NumberOfQueries += 1
 		stats.TotalProcessingTime += value.(Result).Span
 		durations = append(durations, value.(Result).Span)
