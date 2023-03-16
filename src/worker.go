@@ -90,7 +90,6 @@ func (w *Workers) execute(processes <-chan Process) (data sync.Map) {
 	go func() {
 		for process := range processes {
 			(*w)[process.Row.Index].processes <- process
-			data.Store(process.Id, nil)
 		}
 		for _, worker := range *w {
 			close(worker.processes)
